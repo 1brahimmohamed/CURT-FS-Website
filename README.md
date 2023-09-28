@@ -20,8 +20,9 @@
 ## 📄 7 Pages
 - 🏠 Home Page
 - ℹ️ About Page
+- 🏎️ Formula Student Page
 - 📞 Contact Page
-- 🎨 Team Page
+- 🤸‍♂️ Team Page
 - 📚 Blog Page
 - 📝 Blog Single Page
 
