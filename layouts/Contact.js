@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
+import Circle from "@components/Circle";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
@@ -12,13 +13,47 @@ const Contact = ({ data }) => {
       <div className="container">
         <div className="section row items-center justify-center">
           <div className="animate lg:col-5">
-            <ImageFallback
-              className="mx-auto lg:pr-10"
-              src="/images/vectors/contact.png"
-              width={497}
-              height={397}
-              alt=""
-            />
+            <div className="about-image relative p-[60px]">
+              <ImageFallback
+                  className="animate relative w-full rounded-2xl"
+                  src={"/images/contact2.webp"}
+                  width={425}
+                  height={487}
+                  alt=""
+              />
+              <Circle
+                  className="top-4 left-4 z-[-1]"
+                  width={85}
+                  height={85}
+              />
+              <Circle
+                  width={37}
+                  height={37}
+                  fill={false}
+                  className="top-20 right-10 z-[-1]"
+              />
+              <Circle
+                  className="top-1/2 right-12 -z-[1]"
+                  width={24}
+                  height={24}
+              />
+              <Circle
+                  className="bottom-6 right-6 z-[-1]"
+                  width={85}
+                  height={85}
+              />
+              <Circle
+                  className="top-1/2 left-12 z-[-1]"
+                  width={20}
+                  height={20}
+              />
+              <Circle
+                  className="bottom-12 left-8 z-[1]"
+                  width={47}
+                  height={47}
+                  fill={false}
+              />
+            </div>
           </div>
           <div className="animate lg:col-5">
             <form
@@ -26,7 +61,7 @@ const Contact = ({ data }) => {
               action={config.params.contact_form_action}
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
             >
-              <h2 className="h4 mb-6">Send A Message</h2>
+              <h2 className="h4 mb-6">Get in touch with us</h2>
               <div className="mb-6">
                 <label
                   className="mb-2 block font-medium text-dark"
