@@ -1,0 +1,49 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Blog",
+      "url": "/posts"
+    },
+    {
+      "name": "Team",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Team 2023",
+          "url": "/team-2023"
+        },
+        {
+          "name": "Team 2022",
+          "url": "/team-2022"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Team",
+      "url": "/team"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

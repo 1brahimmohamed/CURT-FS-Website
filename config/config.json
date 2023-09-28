@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "CURT - Formula Student",
+    "base_url": "/",
+    "favicon": "/images/curt_ico.png",
+    "logo": "/images/CURT.svg",
+    "logo_width": "240",
+    "logo_height": "60",
+    "logo_text": "CURT"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "",
+    "copyright": "Developed By [Ibrahim Mohamed (SBME 2024)](https:www.ibrahimmohamed.online)"
+  },
+
+  "contact_info": {
+    "phone": "+20 1147719975",
+    "email": "info@curt-fs.com",
+    "location": "1 Cairo University Rd, Oula, Giza Governorate, 12613, Egypt"
+  },
+
+  "nav_button": {
+    "enable": false,
+    "label": "Download Now",
+    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+  },
+
+  "metadata": {
+    "meta_author": "Ibrahim Mohamed",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Cairo University Racing Team - Formula Student"
+  },
+
+  "call_to_action": {
+    "enable": false,
+    "title": "Get Andromeda Now",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "button": {
+      "label": "Download The Theme",
+      "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}
