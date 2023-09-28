@@ -9,8 +9,8 @@ banner:
 
 ##brands
 brands:
-  sub_title: Proudly Previous Sponsors
-  title: Previous Partners
+  sub_title: Previous Partners
+  title: Trusted by the region's best
   description:
   list:
       - /images/my-brands/CU.png

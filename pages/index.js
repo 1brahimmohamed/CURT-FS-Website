@@ -517,7 +517,7 @@ const Home = ({banner, brands, features,  intro, speciality, testimonial}) => {
       {/*</section>*/}
 
       {/* Cta */}
-      <Cta/>
+      {/*<Cta/>*/}
     </Base>
   );
 };

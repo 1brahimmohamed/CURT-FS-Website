@@ -6,30 +6,30 @@ draft: false
 ## about us
 about_us:
   subtitle: WHO WE ARE
-  title: Hello, We’re Andromeda Here For Your Help
-  content: Your online Health & Fitness companion that offers free assistance on its Facebook Group and provides quality paid guided personal training packages by and through website. We are the first ever, online manifesto in Bangladesh to make place you will select when you think of getting fit
-  image: /images/about/01.jpg
+  title: Hello, We’re Cairo University Racing Team 
+  content: We're a group of talented and dedicated engineering students at Cairo University, sharing the passion towards the automotive industry. We are a committed, united by our shared vision and commitment to making a significant impact in the automotive industry, particularly in the realm of motorsports. Our focus is on the future, and we firmly believe that our efforts today will shape the industry of tomorrow.
+  image: /images/about/team.webp
 
 ## our works
 works:
   subtitle: OUR WORKS
-  title: What We Do
+  title: Curious About More?
   list:
-    - title: Building A New Class
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Design For Anyone
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Creative Flair Design
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Building Products
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
+    - title: E2E Formula Student Cars
+      content: Our team specializes in the end-to-end production of Formula Student cars Including extensive research, meticulous planning, innovative designing, precision manufacturing, careful assembly, rigorous testing, and detailed reporting for all systems incorporated in our vehicles.
+    - title: Our History
+      content: Our journey began in 2012 as a graduation project. Since then, we have evolved into a competitive team participating in Formula Student competitions globally. Our experience spans six different competitions across three countries - the United Kingdom, Germany, and Italy.
+    - title: Sustainable Racing
+      content: We take pride in our role as pioneers in both racing and sustainability. we are manufacturing electric vehicles from scratch, contributing to a cleaner, sustainable future. We ensure they align with our mission to reduce emissions and support the United Nations SDGs.
+    - title: Driver-less Cars
+      content: Our commitment to innovation extends to the cutting-edge autonomous driving. We're developing autonomous racing technology. Using advanced sensors & machine learning algorithms, we're shaping the future of racing through autonomous.
 
 ## our mission
 mission:
   subtitle: OUR MISSION
-  title: Main Vision And Mission Of Our Company
+  title: Main Vision And Mission
   content: We were freelance designers and developers, constantly finding ourselve deep vague feedback. leaving a notes from the sticky note piece .
-  image: /images/about/02.jpg
+  image: /images/about/car2.webp
 
 ## short video
 video:
@@ -41,18 +41,23 @@ video:
 
 ## clients
 clients:
-  subtitle: OUR CLIENTS
-  title: Trusted By Thousands Companies
+  subtitle: PREVIOUS PARTNERS
+  title: Trusted By
   brands:
-    - /images/brands/01-colored.png
-    - /images/brands/02-colored.png
-    - /images/brands/03-colored.png
-    - /images/brands/04-colored.png
-    - /images/brands/05-colored.png
-    - /images/brands/06-colored.png
-    - /images/brands/04-colored.png
-    - /images/brands/05-colored.png
-    - /images/brands/06-colored.png
+    - /images/my-brands/CU.png
+    - /images/my-brands/bender.png
+    - /images/my-brands/gb-auto.png
+    - /images/my-brands/HRS.png
+    - /images/my-brands/IPG.png
+    - /images/my-brands/IS.png
+    - /images/my-brands/NBE_logo.png
+    - /images/my-brands/Ricardo.svg
+    - /images/my-brands/SimScale.png
+    - /images/my-brands/Solidworks.png
+    - /images/my-brands/aoi.png
+    - /images/my-brands/r&d.png
+    - /images/my-brands/gig.png
+    - /images/my-brands/teriak.png
 
 
 ## members
@@ -73,22 +78,18 @@ our_member:
 
 ## office
 our_office:
-  subtitle: OUR OFFICES
-  title: Made With Love Of Around The </br> World With Many Offices
-  content: We were freelance designers and developers, constantly finding </br> ourselves deep in vague feedback. This made every client and team
+  subtitle: COMPETITIONS WE PARTICIPATED IN
+  title: Competed With Love  </br> across Europe in 
+  content: Cultivating a wealth of experience, our team has actively engaged in six distinct competitions, <br> each taking place in three diverse countries including <br> the United Kingdom, Germany, and Italy
   countries:
-    - flag: /images/about/flags/us.png
-      name: NewYork, USA
-      location: 219 Bald Hill Drive Oakland Gardens, NY 11364
-    - flag: /images/about/flags/au.png
-      name: Australia, Perth
-      location: Flat 23 80 Anthony Circlet Port Guiseppe, TAS 2691
-    - flag:  /images/about/flags/germany.png
-      name: Berlin, Germany
-      location: Jl Raya Dewi Sartika Ged Harapan Masa, Br Germeny
-    - flag:  /images/about/flags/china.png
-      name: China, Wohan
-      location: 1hao Wen Ti Huo Dong Zhong Xin 1ceng Jian Xing
-
+    - flag: /images/about/flags/germany.png
+      name: Germany
+      location: Silverstone
+    - flag: /images/about/flags/uk.png
+      name: United Kingdom
+      location: Silverstone
+    - flag:  /images/about/flags/italy.png
+      name: Italy
+      location: Italy
 ---
 
