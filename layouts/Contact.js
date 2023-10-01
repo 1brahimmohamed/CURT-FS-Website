@@ -2,10 +2,21 @@ import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 import Circle from "@components/Circle";
+import {useState} from "react";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // You can access the form data from the formData state.
+    console.log('Form Data');
+  }
+
+
 
   return (
     <section className="section">
@@ -58,7 +69,8 @@ const Contact = ({ data }) => {
           <div className="animate lg:col-5">
             <form
               method="POST"
-              action={config.params.contact_form_action}
+              // action={config.params.contact_form_action}
+              onSubmit={handleSubmit}
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
             >
               <h2 className="h4 mb-6">Get in touch with us</h2>
@@ -113,9 +125,11 @@ const Contact = ({ data }) => {
                 >
                   Message
                 </label>
-                <textarea className="form-textarea w-full" rows="6" />
+                <textarea
+                  className="form-textarea w-full"
+                  rows="6" />
               </div>
-              <button className="btn btn-primary block w-full">
+              <button type="submit" className="btn btn-primary block w-full">
                 Submit Now
               </button>
             </form>

@@ -3,13 +3,15 @@ import About from "@layouts/About";
 import Base from "@layouts/Baseof";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
-import { getRegularPage, getSinglePage } from "@lib/contentParser";
+import {getRegularPage, getSinglePage} from "@lib/contentParser";
+import Team2023 from "@layouts/Team2023";
+import FormulaStudent from "@layouts/Formula-Student";
 
 // for all regular pages
-const RegularPages = ({ data }) => {
-  const { title, meta_title, description, image, noindex, canonical, layout } =
+const RegularPages = ({data}) => {
+  const {title, meta_title, description, image, noindex, canonical, layout} =
     data.frontmatter;
-  const { content } = data;
+  const {content} = data;
 
   return (
     <Base
@@ -21,13 +23,17 @@ const RegularPages = ({ data }) => {
       canonical={canonical}
     >
       {layout === "404" ? (
-        <NotFound data={data} />
+        <NotFound data={data}/>
       ) : layout === "about" ? (
-        <About data={data} />
+        <About data={data}/>
       ) : layout === "contact" ? (
-        <Contact data={data} />
+        <Contact data={data}/>
+      ) : layout === "Team2023" ? (
+        <Team2023 data={data}/>
+      ) :  layout === "formula-student" ? (
+        <FormulaStudent data={data}/>
       ) : (
-        <Default data={data} />
+        <Default data={data}/>
       )}
     </Base>
   );
@@ -50,8 +56,8 @@ export const getStaticPaths = async () => {
 };
 
 // for regular page data
-export const getStaticProps = async ({ params }) => {
-  const { regular } = params;
+export const getStaticProps = async ({params}) => {
+  const {regular} = params;
   const allPages = await getRegularPage(regular);
 
   return {

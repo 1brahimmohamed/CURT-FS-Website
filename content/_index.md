@@ -27,6 +27,10 @@ brands:
       - /images/my-brands/r&d.png
       - /images/my-brands/gig.png
       - /images/my-brands/teriak.png
+      - /images/my-brands/rowad.webp
+      - /images/my-brands/ecb.webp
+      - /images/my-brands/autovrom.webp
+
   media:
     - /images/my-brands/media/cbc.png
     - /images/my-brands/media/mbc.webp

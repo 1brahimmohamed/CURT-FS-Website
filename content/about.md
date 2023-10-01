@@ -26,9 +26,9 @@ works:
 
 ## our mission
 mission:
-  subtitle: OUR MISSION
-  title: Main Vision And Mission
-  content: We were freelance designers and developers, constantly finding ourselve deep vague feedback. leaving a notes from the sticky note piece .
+  subtitle: MISSION
+  title: Our Commitment to the Future
+  content: In 2019 Cairo University Racing Team was the First Egyptian team to manufacture an electric car and compete with it instead of the typical CV. Representing Egypt's commitment to environmental conservation with up to-date innovations and technologies.
   image: /images/about/car2.webp
 
 ## short video
@@ -58,6 +58,9 @@ clients:
     - /images/my-brands/r&d.png
     - /images/my-brands/gig.png
     - /images/my-brands/teriak.png
+    - /images/my-brands/rowad.webp
+    - /images/my-brands/ecb.webp
+    - /images/my-brands/autovrom.webp
 
 
 ## members
@@ -84,12 +87,12 @@ our_office:
   countries:
     - flag: /images/about/flags/germany.png
       name: Germany
-      location: Silverstone
+      location: Formula Student Germany
     - flag: /images/about/flags/uk.png
       name: United Kingdom
-      location: Silverstone
+      location: Formula Student UK
     - flag:  /images/about/flags/italy.png
       name: Italy
-      location: Italy
+      location: Formula Student Italy
 ---
 
