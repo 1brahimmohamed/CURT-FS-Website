@@ -2,11 +2,13 @@ import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 import Circle from "@components/Circle";
+
 import {useState} from "react";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
+
 
 
   const handleSubmit = async (e) => {
@@ -15,8 +17,6 @@ const Contact = ({ data }) => {
     // You can access the form data from the formData state.
     console.log('Form Data');
   }
-
-
 
   return (
     <section className="section">
@@ -130,7 +130,7 @@ const Contact = ({ data }) => {
                   rows="6" />
               </div>
               <button type="submit" className="btn btn-primary block w-full">
-                Submit Now
+                Send Now
               </button>
             </form>
           </div>

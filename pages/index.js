@@ -14,187 +14,192 @@ import {Autoplay, Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import Grid from "@mui/material/Grid";
 import ResponsiveGrid from "@components/Grid";
+import HeroVideo from "@components/HeroVideo";
 
 
 const Home = ({banner, brands, features,  intro, speciality, testimonial}) => {
   const paginationRef = useRef(null);
   const testimonialPaginationRef = useRef(null);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const banner = document.querySelector(".banner");
-      const bannerBg = document.querySelector(".banner-bg");
-      const bannerContent = document.querySelector(".banner-content");
-      const header = document.querySelector(".header");
-      const tl = gsap.timeline();
-
-      tl.fromTo(
-        ".banner-title",
-        {y: 20, opacity: 0},
-        {y: 0, opacity: 1, duration: 0.5, delay: 0.5}
-      )
-        .fromTo(
-          ".banner-btn",
-          {y: 20, opacity: 0},
-          {y: 0, opacity: 1, duration: 0.5},
-          ">-0.4"
-        )
-        .fromTo(
-          ".banner-img",
-          {
-            y: 20,
-            opacity: 0,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.5,
-          },
-          ">-.5"
-        );
-
-      //parallax banner
-      const parallaxTl = gsap.timeline({
-        ease: "none",
-        scrollTrigger: {
-          trigger: banner,
-          start: () => `top ${header.clientHeight}`,
-          scrub: true,
-        },
-      });
-
-      const position = (banner.offsetHeight - bannerBg.offsetHeight) * 0.4;
-      parallaxTl
-        .fromTo(
-          bannerBg,
-          {
-            y: 0,
-          },
-          {
-            y: -position,
-          }
-        )
-        .fromTo(
-          bannerContent,
-          {
-            y: 0,
-          },
-          {
-            y: position,
-          },
-          "<"
-        )
-        .fromTo(
-          ".banner-bg .circle",
-          {
-            y: 0,
-          },
-          {
-            y: position,
-          },
-          "<"
-        );
-    });
-
-    return () => ctx.revert();
-  }, []);
+  // useEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     // const banner = document.querySelector(".banner");
+  //     const bannerBg = document.querySelector(".banner-bg");
+  //     const bannerContent = document.querySelector(".banner-content");
+  //     const header = document.querySelector(".header");
+  //     const tl = gsap.timeline();
+  //
+  //     tl.fromTo(
+  //       ".banner-title",
+  //       {y: 20, opacity: 0},
+  //       {y: 0, opacity: 1, duration: 0.5, delay: 0.5}
+  //     )
+  //       .fromTo(
+  //         ".banner-btn",
+  //         {y: 20, opacity: 0},
+  //         {y: 0, opacity: 1, duration: 0.5},
+  //         ">-0.4"
+  //       )
+  //       .fromTo(
+  //         ".banner-img",
+  //         {
+  //           y: 20,
+  //           opacity: 0,
+  //         },
+  //         {
+  //           y: 0,
+  //           opacity: 1,
+  //           duration: 0.5,
+  //         },
+  //         ">-.5"
+  //       );
+  //
+  //     //parallax banner
+  //     const parallaxTl = gsap.timeline({
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: banner,
+  //         start: () => `top ${header.clientHeight}`,
+  //         scrub: true,
+  //       },
+  //     });
+  //
+  //     const position = (banner.offsetHeight - bannerBg.offsetHeight) * 0.4;
+  //     parallaxTl
+  //       .fromTo(
+  //         bannerBg,
+  //         {
+  //           y: 0,
+  //         },
+  //         {
+  //           y: -position,
+  //         }
+  //       )
+  //       .fromTo(
+  //         bannerContent,
+  //         {
+  //           y: 0,
+  //         },
+  //         {
+  //           y: position,
+  //         },
+  //         "<"
+  //       )
+  //       .fromTo(
+  //         ".banner-bg .circle",
+  //         {
+  //           y: 0,
+  //         },
+  //         {
+  //           y: position,
+  //         },
+  //         "<"
+  //       );
+  //   });
+  //
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <Base>
-      <section className="section banner pt-0 mb-2">
-        <div className="container-xl">
-          <div className="relative">
-            <div className="bg-theme banner-bg col-12 absolute top-0 left-0">
-              <Circle
-                className="circle left-[10%] top-12"
-                width={32}
-                height={32}
-                fill={false}
-              />
-              <Circle
-                className="circle left-[2.5%] top-[29%]"
-                width={85}
-                height={85}
-              />
-              <Circle
-                className="circle left-[22%] bottom-[48%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="circle left-[15%] bottom-[37%]"
-                width={47}
-                height={47}
-                fill={false}
-              />
-              <Circle
-                className="circle left-[6%] bottom-[13%]"
-                width={62}
-                height={62}
-                fill={false}
-              />
-              <Circle
-                className="circle right-[12%] top-[15%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="circle right-[2%] top-[30%]"
-                width={73}
-                height={73}
-                fill={false}
-              />
-              <Circle
-                className="circle right-[19%] top-[48%]"
-                width={37}
-                height={37}
-                fill={false}
-              />
-              <Circle
-                className="circle right-[33%] top-[54%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="circle right-[3%] bottom-[20%]"
-                width={65}
-                height={65}
-              />
-            </div>
-            <div className="row overflow-hidden rounded-2xl">
-              <div className="col-12">
-                <div className="row relative justify-center">
-                  <div className="banner-content col-10 pt-20 pb-10 text-center">
-                    {markdownify(
-                      banner.title,
-                      "h1",
-                      "banner-title opacity-0"
-                    )}
-                    <h2 className={"mb-8 banner-title opacity-0"}>
-                      Formula Student
-                    </h2>
-                    <div className="banner-btn opacity-0">
-                      <Link className="btn btn-primary" href={banner.link.href}>
-                        {banner.link.label}
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-10">
-                    <ImageFallback
-                      className="banner-img opacity-0"
-                      src={banner.image}
-                      width={1170}
-                      height={666}
-                      priority={true}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+     <HeroVideo videoSrc={"/ws1.mp4"} />
+
+      {/*<section className="section banner pt-0 mb-2">*/}
+      {/*  <div className="container-xl">*/}
+      {/*    <div className="relative">*/}
+      {/*      <div className="bg-theme banner-bg col-12 absolute top-0 left-0">*/}
+      {/*        <Circle*/}
+      {/*          className="circle left-[10%] top-12"*/}
+      {/*          width={32}*/}
+      {/*          height={32}*/}
+      {/*          fill={false}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle left-[2.5%] top-[29%]"*/}
+      {/*          width={85}*/}
+      {/*          height={85}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle left-[22%] bottom-[48%]"*/}
+      {/*          width={20}*/}
+      {/*          height={20}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle left-[15%] bottom-[37%]"*/}
+      {/*          width={47}*/}
+      {/*          height={47}*/}
+      {/*          fill={false}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle left-[6%] bottom-[13%]"*/}
+      {/*          width={62}*/}
+      {/*          height={62}*/}
+      {/*          fill={false}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle right-[12%] top-[15%]"*/}
+      {/*          width={20}*/}
+      {/*          height={20}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle right-[2%] top-[30%]"*/}
+      {/*          width={73}*/}
+      {/*          height={73}*/}
+      {/*          fill={false}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle right-[19%] top-[48%]"*/}
+      {/*          width={37}*/}
+      {/*          height={37}*/}
+      {/*          fill={false}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle right-[33%] top-[54%]"*/}
+      {/*          width={20}*/}
+      {/*          height={20}*/}
+      {/*        />*/}
+      {/*        <Circle*/}
+      {/*          className="circle right-[3%] bottom-[20%]"*/}
+      {/*          width={65}*/}
+      {/*          height={65}*/}
+      {/*        />*/}
+      {/*      </div>*/}
+      {/*      <div className="row overflow-hidden rounded-2xl">*/}
+      {/*        <div className="col-12">*/}
+      {/*          <div className="row relative justify-center">*/}
+      {/*            <div className="banner-content col-10 pt-20 pb-10 text-center">*/}
+      {/*              {markdownify(*/}
+      {/*                banner.title,*/}
+      {/*                "h1",*/}
+      {/*                "banner-title opacity-0"*/}
+      {/*              )}*/}
+      {/*              <h2 className={"mb-8 banner-title opacity-0"}>*/}
+      {/*                Formula Student*/}
+      {/*              </h2>*/}
+      {/*              <div className="banner-btn opacity-0">*/}
+      {/*                <Link className="btn btn-primary" href={banner.link.href}>*/}
+      {/*                  {banner.link.label}*/}
+      {/*                </Link>*/}
+      {/*              </div>*/}
+      {/*            </div>*/}
+      {/*            <div className="col-10">*/}
+      {/*              <ImageFallback*/}
+      {/*                className="banner-img opacity-0"*/}
+      {/*                src={banner.image}*/}
+      {/*                width={1170}*/}
+      {/*                height={666}*/}
+      {/*                priority={true}*/}
+      {/*                alt=""*/}
+      {/*              />*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* Features */}
       <section className="section">
