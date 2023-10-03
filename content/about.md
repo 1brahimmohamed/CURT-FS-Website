@@ -61,8 +61,8 @@ clients:
     - /images/my-brands/rowad.webp
     - /images/my-brands/ecb.webp
     - /images/my-brands/autovrom.webp
-
-
+    - /images/my-brands/rs.webp
+  
 ## members
 our_member:
   subtitle: OUR MEMBERS

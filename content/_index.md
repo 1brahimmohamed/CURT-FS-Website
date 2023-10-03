@@ -30,6 +30,7 @@ brands:
       - /images/my-brands/rowad.webp
       - /images/my-brands/ecb.webp
       - /images/my-brands/autovrom.webp
+      - /images/my-brands/rs.webp
 
   media:
     - /images/my-brands/media/cbc.png
@@ -39,6 +40,7 @@ brands:
     - /images/my-brands/media/dream.png
     - /images/my-brands/media/TEN.png
     - /images/my-brands/media/mehawar.png
+    - /images/my-brands/media/dmc.webp
     
   
 
