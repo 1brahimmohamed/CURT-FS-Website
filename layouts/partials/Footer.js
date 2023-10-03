@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" py-6 text-center">
-          Developed by <a className="hover:text-primary hover:underline" href={"www.ibrahimmohamed.online"}>Ibrahim Mohamed (SBME 2024)</a>
+          Developed by <a className="hover:text-primary hover:underline" href={"https://www.ibrahimmohamed.online"}>Ibrahim Mohamed (SBME 2024)</a>
         </div>
       </div>
     </footer>

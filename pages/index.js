@@ -104,7 +104,11 @@ const Home = ({banner, brands, features,  intro, speciality, testimonial}) => {
     <Base>
 
 
-     <HeroVideo videoSrc={"/ws1.mp4"} />
+     <HeroVideo
+       videoSrc={"/ws1.webm"}
+       title={"CAIRO UNIVERSITY RACING TEAM"}
+       subtitle={"Formula Student"}
+     />
 
       {/*<section className="section banner pt-0 mb-2">*/}
       {/*  <div className="container-xl">*/}
