@@ -77,6 +77,11 @@ const Banner = ({ title }) => {
             <li className="capitalize">{title}</li>
           </ul>
           <div className="bg-theme banner-bg col-12 absolute top-0 left-0 bg-theme-light before:hidden after:hidden">
+            {/*<img*/}
+            {/*  className={"grayscale"}*/}
+            {/*  style={{ borderRadius: '1rem',  width: "100%", height: "100%" }}*/}
+            {/*  src={"/images/track.jpg"}/>*/}
+
             <ImageFallback
               priority={true}
               fill={true}
@@ -91,11 +96,16 @@ const Banner = ({ title }) => {
               sizes="100vw"
               alt=""
             />
+
+
+
+
             <Circle
               className="circle left-[15%] top-[18%]"
               width={32}
               height={32}
               fill={false}
+              white={true}
             />
             <Circle
               className="circle left-[4%] bottom-[27%]"
@@ -153,6 +163,7 @@ const Banner = ({ title }) => {
               height={37}
               fill={false}
             />
+
           </div>
         </div>
       </div>

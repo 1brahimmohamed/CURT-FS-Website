@@ -15,10 +15,7 @@ const Logo = ({ src }) => {
           src={src ? src : logo}
           alt={title}
           priority
-          style={{
-            height: logo_height.replace("px", "") + "px",
-            width: logo_width.replace("px", "") + "px",
-          }}
+          className="w-36 sm:ml-2 md:w-40 lg:w-44"
         />
       ) : logo_text ? (
         logo_text
