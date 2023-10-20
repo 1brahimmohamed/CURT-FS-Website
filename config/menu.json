@@ -22,10 +22,6 @@
           "url": "/team-2023"
         }
       ]
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ],
   "footer": [
@@ -36,10 +32,6 @@
     {
       "name": "Team",
       "url": "/team"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ]
 }
