@@ -15,38 +15,6 @@ const AboutFS = ({data}) => {
               height={487}
               alt=""
             />
-            {/*<Circle*/}
-            {/*  className="top-4 left-4 z-[-1]"*/}
-            {/*  width={85}*/}
-            {/*  height={85}*/}
-            {/*/>*/}
-            {/*<Circle*/}
-            {/*  width={37}*/}
-            {/*  height={37}*/}
-            {/*  fill={false}*/}
-            {/*  className="top-20 right-10 z-[-1]"*/}
-            {/*/>*/}
-            {/*<Circle*/}
-            {/*  className="top-1/2 right-12 -z-[1]"*/}
-            {/*  width={24}*/}
-            {/*  height={24}*/}
-            {/*/>*/}
-            {/*<Circle*/}
-            {/*  className="bottom-6 right-6 z-[-1]"*/}
-            {/*  width={85}*/}
-            {/*  height={85}*/}
-            {/*/>*/}
-            {/*<Circle*/}
-            {/*  className="top-1/2 left-12 z-[-1]"*/}
-            {/*  width={20}*/}
-            {/*  height={20}*/}
-            {/*/>*/}
-            {/*<Circle*/}
-            {/*  className="bottom-12 left-8 z-[1]"*/}
-            {/*  width={47}*/}
-            {/*  height={47}*/}
-            {/*  fill={false}*/}
-            {/*/>*/}
           </div>
         </div>
         <div className="animate md:col-6 lg:col-4 md:order-1">

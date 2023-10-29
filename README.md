@@ -1,30 +1,15 @@
 <h1 align=center>CURT - Formula Student Website</h1>
 <p align=center>Developed by Ibrahim Mohamed - Autonomous Driving Director</p>
-<h2 align="center"> <a target="_blank" href="https://andromeda-light-nextjs.vercel.app/" rel="nofollow">👀Live Preview</a> 
+<h2 align="center"> <a target="_blank" href="https://curt-fs-website.vercel.app/" rel="nofollow">👀Live Preview</a> 
 </h2>
 
 <p align=center>
   <a href="https://github.com/vercel/next.js/releases/tag/v13.0.6" alt="Contributors">
     <img src="https://img.shields.io/static/v1?label=NEXTJS&message=13.0&color=000&logo=nextjs" />
   </a>
-
-  <a href="https://github.com/themefisher/andromeda-light-nextjs/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/themefisher/andromeda-light-nextjs" alt="license"></a>
-
-  <img src="https://img.shields.io/github/languages/code-size/themefisher/andromeda-light-nextjs" alt="code size">
-
 </p>
 
-![img_1.png](public/images/img_1.png)
-
-## 📄 7 Pages
-- 🏠 Home Page
-- ℹ️ About Page
-- 🏎️ Formula Student Page
-- 📞 Contact Page
-- 🤸‍♂️ Team Page
-- 📚 Blog Page
-- 📝 Blog Single Page
+![img_1.png](public/images/readme.png)
 
 <!-- installation -->
 ## ⚙️Installation

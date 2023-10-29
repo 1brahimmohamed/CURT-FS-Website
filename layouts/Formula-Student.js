@@ -1,29 +1,15 @@
-import {markdownify} from "@lib/utils/textConverter";
 import Banner from "./components/Banner";
-import Cta from "./components/Cta";
-import ImageFallback from "./components/ImageFallback";
-import Image from "next/image";
-import Circle from "@components/Circle";
 import AboutFS from "@components/FS/About";
-
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 import HowFSWorks from "@components/FS/HowFSWorks";
 import Acheivements from "@components/FS/Acheivements";
-
-
-let works = {
-  subtitle: "Our Works",
-  title: "Our Works",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-};
+import 'react-vertical-timeline-component/style.min.css';
 
 const FormulaStudent = ({data}) => {
   const {frontmatter} = data;
   const {
     title,
-    firstDiv,
-    secondDiv,
+    formula_student_info,
+    how_it_works,
     achievements
   } = frontmatter;
 
@@ -33,15 +19,14 @@ const FormulaStudent = ({data}) => {
         <Banner title={title}/>
 
         {/* About */}
-        <AboutFS data={firstDiv}/>
+        <AboutFS data={formula_student_info}/>
 
         {/* How FS Works */}
-        <HowFSWorks data={secondDiv}/>
+        <HowFSWorks data={how_it_works}/>
 
         <Acheivements data={achievements} />
 
       </section>
-      <Cta/>
     </>
   );
 };

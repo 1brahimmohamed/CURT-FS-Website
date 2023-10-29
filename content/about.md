@@ -31,56 +31,34 @@ mission:
   content: In 2019 Cairo University Racing Team was the First Egyptian team to manufacture an electric car and compete with it instead of the typical CV. Representing Egypt's commitment to environmental conservation with up to-date innovations and technologies.
   image: /images/about/car2.webp
 
-## short video
-video:
-  subtitle: A SHORT VIDEO
-  title: You Take Care Of The Payments, We Take Care Of The Rest.
-  description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistcy throughout the.
-  video_id: dyZcRRWiuuw
-  thumbnail: /images/about/video-popup-2.jpg
 
-## clients
-clients:
+## sponsors
+sponsors:
   subtitle: PREVIOUS PARTNERS
   title: Trusted By
-  brands:
-    - /images/my-brands/CU.png
-    - /images/my-brands/bender.png
-    - /images/my-brands/gb-auto.png
-    - /images/my-brands/HRS.png
-    - /images/my-brands/IPG.png
-    - /images/my-brands/IS.png
-    - /images/my-brands/NBE_logo.png
-    - /images/my-brands/Ricardo.svg
-    - /images/my-brands/SimScale.png
-    - /images/my-brands/Solidworks.png
-    - /images/my-brands/aoi.png
-    - /images/my-brands/r&d.png
-    - /images/my-brands/gig.png
-    - /images/my-brands/teriak.png
-    - /images/my-brands/rowad.webp
-    - /images/my-brands/ecb.webp
-    - /images/my-brands/autovrom.webp
-    - /images/my-brands/rs.webp
+  companies:
+    - /images/sponsors/CU.png
+    - /images/sponsors/bender.png
+    - /images/sponsors/gb-auto.png
+    - /images/sponsors/HRS.png
+    - /images/sponsors/IPG.png
+    - /images/sponsors/IS.png
+    - /images/sponsors/NBE_logo.png
+    - /images/sponsors/Ricardo.svg
+    - /images/sponsors/SimScale.png
+    - /images/sponsors/Solidworks.png
+    - /images/sponsors/aoi.png
+    - /images/sponsors/r&d.png
+    - /images/sponsors/gig.png
+    - /images/sponsors/teriak.png
+    - /images/sponsors/rowad.webp
+    - /images/sponsors/ecb.webp
+    - /images/sponsors/autovrom.webp
+    - /images/sponsors/rs.webp
   
-## members
-our_member:
-  subtitle: OUR MEMBERS
-  title: The People Behind
-  content: We were freelance designers and developers, constantly finding </br> ourselves deep in vague feedback. This made every client and team
-  list:
-    - name: Valentin Staykov
-      field: Operations
-      image: /images/about/team/01.jpg
-    - name: Bukiakta Bansalo
-      field: Product
-      image: /images/about/team/02.jpg
-    - name: Ortrin Okaster
-      field: Engineering
-      image: /images/about/team/03.jpg
 
-## office
-our_office:
+## competitions
+competitions:
   subtitle: COMPETITIONS WE PARTICIPATED IN
   title: Competed With Love  </br> across Europe in 
   content: Cultivating a wealth of experience, our team has actively engaged in six distinct competitions, <br> each taking place in three diverse countries including <br> the United Kingdom, Germany, and Italy

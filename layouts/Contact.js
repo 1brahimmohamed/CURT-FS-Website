@@ -9,8 +9,6 @@ const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
 
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 

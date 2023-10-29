@@ -3,9 +3,7 @@ import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Banner from "./components/Banner";
 import Circle from "./components/Circle";
-import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
-import VideoPopup from "./components/VideoPopup";
 
 const About = ({ data }) => {
   const { frontmatter } = data;
@@ -14,10 +12,8 @@ const About = ({ data }) => {
     about_us,
     works,
     mission,
-    video,
-    clients,
-    our_member,
-    our_office,
+    sponsors,
+    competitions,
   } = frontmatter;
 
   return (
@@ -155,14 +151,14 @@ const About = ({ data }) => {
         {/* Office */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{our_office.subtitle}</p>
-            {markdownify(our_office.title, "h2", "section-title mt-4")}
-            {markdownify(our_office.content, "p", "mt-16")}
+            <p>{competitions.subtitle}</p>
+            {markdownify(competitions.title, "h2", "section-title mt-4")}
+            {markdownify(competitions.content, "p", "mt-16")}
           </div>
           <div className="row justify-center">
             <div className="lg:col-10">
               <div className="row  justify-center">
-                {our_office.countries.map((country, index) => (
+                {competitions.countries.map((country, index) => (
                     <div
                         key={("country-", index)}
                         className="animate mt-10 md:col-6 xl:col-3"
@@ -189,78 +185,12 @@ const About = ({ data }) => {
           </div>
         </div>
 
-        {/*/!* Video *!/*/}
-        {/*<div className="container-xl relative">*/}
-        {/*  <div className="bg-theme absolute top-0 left-0 w-full">*/}
-        {/*    <Circle*/}
-        {/*      className="left-[7%] top-[21%]"*/}
-        {/*      width={32}*/}
-        {/*      height={32}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="left-[30%] top-[10%]"*/}
-        {/*      width={20}*/}
-        {/*      height={20}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="left-[4%] bottom-[35%]"*/}
-        {/*      width={20}*/}
-        {/*      height={20}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="left-[10%] bottom-[11%]"*/}
-        {/*      width={37}*/}
-        {/*      height={37}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="left-[44%] bottom-[48%]"*/}
-        {/*      width={37}*/}
-        {/*      height={37}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="left-[35%] bottom-[22%]"*/}
-        {/*      width={20}*/}
-        {/*      height={20}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*    <Circle*/}
-        {/*      className="right-[32%] top-[2%]"*/}
-        {/*      width={47}*/}
-        {/*      height={47}*/}
-        {/*      fill={false}*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*  <div className="row items-center justify-center py-[90px]">*/}
-        {/*    <div className="md:col-6 xl:col-4">*/}
-        {/*      <div className="animate p-5">*/}
-        {/*        <p>{video.subtitle}</p>*/}
-        {/*        {markdownify(video.title, "h2", "mt-4 section-title bar-left")}*/}
-        {/*        {markdownify(video.description, "p", "mt-10")}*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <div className="md:col-6 xl:col-5">*/}
-        {/*      <div className="px-4 ">*/}
-        {/*        <VideoPopup*/}
-        {/*          id={video.video_id}*/}
-        {/*          thumbnail={video.thumbnail}*/}
-        {/*          width={540}*/}
-        {/*          height={585}*/}
-        {/*        />*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
 
-        {/* Clients */}
+        {/* Sponsors */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{clients.subtitle}</p>
-            {markdownify(clients.title, "h2", "section-title mt-4")}
+            <p>{sponsors.subtitle}</p>
+            {markdownify(sponsors.title, "h2", "section-title mt-4")}
           </div>
           <div className="animate from-right col-12 mt-16">
             <Swiper
@@ -275,7 +205,7 @@ const About = ({ data }) => {
               modules={[Autoplay]}
               autoplay={{ delay: 1000 }}
             >
-              {clients.brands.map((brand, index) => (
+              {sponsors.companies.map((brand, index) => (
                 <SwiperSlide
                   className=" h-32 cursor-pointer py-6 px-6   transition lg:px-10"
                   key={"brand-" + index}
@@ -296,11 +226,7 @@ const About = ({ data }) => {
           </div>
         </div>
 
-
-
-
       </section>
-      <Cta />
     </>
   );
 };

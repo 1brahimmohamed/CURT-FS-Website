@@ -2,7 +2,6 @@ import Pagination from "@components/Pagination";
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import Banner from "@layouts/components/Banner";
-import Cta from "@layouts/components/Cta";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { gsap } from "@lib/gsap";
 import Post from "@partials/Post";
@@ -58,8 +57,6 @@ const BlogPagination = ({
           />
         </div>
       </section>
-      {/* CTA */}
-      <Cta />
     </Base>
   );
 };

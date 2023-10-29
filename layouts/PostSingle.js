@@ -7,7 +7,6 @@ import shortcodes from "@shortcodes/all";
 import { DiscussionEmbed } from "disqus-react";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
-import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
 import Post from "./partials/Post";
 
@@ -83,7 +82,6 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
         </div>
       </section>
 
-      <Cta />
     </Base>
   );
 };

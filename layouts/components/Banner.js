@@ -1,11 +1,11 @@
-import { gsap } from "@lib/gsap";
-import { markdownify } from "@lib/utils/textConverter";
+import {gsap} from "@lib/gsap";
+import {markdownify} from "@lib/utils/textConverter";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import Circle from "./Circle";
 import ImageFallback from "./ImageFallback";
 
-const Banner = ({ title }) => {
+const Banner = ({title}) => {
   const banner = useRef(null);
 
   //banner animation
@@ -96,9 +96,6 @@ const Banner = ({ title }) => {
               sizes="100vw"
               alt=""
             />
-
-
-
 
             <Circle
               className="circle left-[15%] top-[18%]"
