@@ -2,18 +2,30 @@ import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 import Circle from "@components/Circle";
+import image from  "./../public/images/contact2.webp";
 
 import {useState} from "react";
+import sendContactFormData from "@lib/email/sendContactFormData";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
 
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    sendContactFormData(formData)
+  }
 
-    // You can access the form data from the formData state.
-    console.log('Form Data');
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
   }
 
   return (
@@ -25,7 +37,7 @@ const Contact = ({ data }) => {
             <div className="about-image relative p-[60px]">
               <ImageFallback
                   className="animate relative w-full rounded-2xl"
-                  src={"/images/contact2.webp"}
+                  src={image}
                   width={425}
                   height={487}
                   alt=""
@@ -66,8 +78,6 @@ const Contact = ({ data }) => {
           </div>
           <div className="animate lg:col-5">
             <form
-              method="POST"
-              // action={config.params.contact_form_action}
               onSubmit={handleSubmit}
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
             >
@@ -85,6 +95,7 @@ const Contact = ({ data }) => {
                   placeholder="Full Name"
                   type="text"
                   required
+                  onChange={handleChange}
                 />
               </div>
               <div className="mb-6">
@@ -100,6 +111,7 @@ const Contact = ({ data }) => {
                   placeholder="Email Address"
                   type="email"
                   required
+                  onChange={handleChange}
                 />
               </div>
               <div className="mb-6">
@@ -114,6 +126,7 @@ const Contact = ({ data }) => {
                   name="subject"
                   type="text"
                   required
+                  onChange={handleChange}
                 />
               </div>
               <div className="mb-6">
@@ -124,8 +137,11 @@ const Contact = ({ data }) => {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   className="form-textarea w-full"
-                  rows="6" />
+                  rows="6"
+                  onChange={handleChange}
+                />
               </div>
               <button type="submit" className="btn btn-primary block w-full">
                 Send Now
