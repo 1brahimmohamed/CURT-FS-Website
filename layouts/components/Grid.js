@@ -25,7 +25,7 @@ export default function ResponsiveGrid({items, size, title, className}) {
                     {items.map((imgUrl) => (
                         <Grid item xs={2} sm={4} md={size} key={imgUrl} >
                             <Item className="flex justify-center">
-                                <img className={"grayscale hover:grayscale-0"}
+                                <img className={"sm:grayscale hover:grayscale-0"}
                                      src={imgUrl}
                                      style={{ width: "100%", height: "100%", objectFit: "contain" }}
                                      alt={imgUrl}
