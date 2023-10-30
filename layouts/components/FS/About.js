@@ -7,7 +7,7 @@ const AboutFS = ({data}) => {
     <div className="section container">
       <div className="row items-center justify-center">
         <div className="animate md:col-6 lg:col-8 md:order-2">
-          <div className="about-image relative p-[60px]">
+          <div className="about-image relative ">
             <ImageFallback
               className="animate relative w-full rounded-2xl"
               src={data.image}
@@ -18,7 +18,7 @@ const AboutFS = ({data}) => {
           </div>
         </div>
         <div className="animate md:col-6 lg:col-4 md:order-1">
-          <p>{data.subtitle}</p>
+          <p className={"mt-7"}> {data.subtitle}</p>
           {markdownify(data.title, "h2", "section-title bar-left mt-4")}
           {markdownify(data.content, "p", "mt-10")}
         </div>

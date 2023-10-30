@@ -197,8 +197,14 @@ const About = ({ data }) => {
               loop={true}
               slidesPerView={5}
               breakpoints={{
-                992: {
-                  slidesPerView: 5,
+                1120: {
+                  slidesPerView: 5, // For large screens, display 5 slides per view
+                },
+                768: {
+                  slidesPerView: 3, // For medium screens, display 3 slides per view
+                },
+                0: {
+                  slidesPerView: 2, // For small screens, display 2 slides per view
                 },
               }}
               spaceBetween={1}
@@ -207,12 +213,12 @@ const About = ({ data }) => {
             >
               {sponsors.companies.map((brand, index) => (
                 <SwiperSlide
-                  className=" h-32 cursor-pointer py-6 px-6   transition lg:px-10"
+                  className="h-32 cursor-pointer py-6 px-6  transition lg:px-10"
                   key={"brand-" + index}
                 >
-                  <div className="relative h-full">
+                  <div className="relative h-full sm:w-52">
                     <ImageFallback
-                      className="object-contain bg-white rounded-xl p-3"
+                      className="object-contain bg-white rounded-xl p-3 sm:w-52"
                       src={brand}
                       sizes="100vw"
                       alt=""

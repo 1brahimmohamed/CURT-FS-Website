@@ -6,20 +6,32 @@ const sendEmailHandler = async (req, res) =>{
 
   const {name, email, subject, message} = req.body;
 
-  const mailOptions = {
-    from: mailConfig.mailOptions.from,
-    to: mailConfig.mailOptions.to,
-    subject: subject,
+  const mailOptionsForUs = {
+    from: mailConfig.mailOptionsForUs.from,
+    to: mailConfig.mailOptionsForUs.to,
+    subject: `New CURT-FS Contact Message: ${subject}`,
     text: message,
-    html: mailTemplate(name, email, subject, message)
+    html: mailTemplate({name, email, subject, message})
   };
 
+  const mailOptionsForUser = {
+    from: mailConfig.mailOptionsForUser.from,
+    to: email,
+    subject: `We have got your message about ${subject}!`,
+    text: `Hi ${name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nBest Regards,\n CURT-Formula Student`,
+    html: mailTemplate({name, subject, message})
+  };
+
+
   try {
-    const info = await transporter.sendMail(mailOptions);
+    const infoForOurMail = await transporter.sendMail(mailOptionsForUs);
+    const infoForUserMail = await transporter.sendMail(mailOptionsForUser);
+
     res.status(200)
       .json({
         message: 'Email sent successfully',
-        info: info.response
+        ourInfo: infoForOurMail.response,
+        userInfo: infoForUserMail.response
       });
 
   }catch (e) {

@@ -1,7 +1,11 @@
 {
-  "mailOptions": {
+  "mailOptionsForUs": {
     "from": "autonomous.curt.fs@gmail.com",
     "to": "autonomous.curt.fs@gmail.com"
+  },
+
+  "mailOptionsForUser": {
+    "from": "autonomous.curt.fs@gmail.com"
   },
 
   "transporterOptions": {

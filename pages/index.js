@@ -117,7 +117,7 @@ const Home = ({banner, sponsors, who_are_we, team_features}) => {
           <div className="row items-center justify-center mb-32">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
-                className="mx-auto rounded-xl"
+                className="mx-auto rounded-xl mt-0 mb-4"
                 src={team_features.feature_one.image}
                 width={575}
                 height={511}
@@ -138,7 +138,7 @@ const Home = ({banner, sponsors, who_are_we, team_features}) => {
           <div className="row items-center">
             <div className="animate lg:col-6">
               <ImageFallback
-                className="mx-auto rounded-xl"
+                className="mx-auto rounded-xl mb-4"
                 src={team_features.feature_two.image}
                 width={575}
                 height={511}
