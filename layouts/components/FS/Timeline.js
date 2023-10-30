@@ -280,7 +280,7 @@ const Timeline = () => {
                       className={"mt-3 mx-5"}
                   >
                       <li style={{color: "gray"}}>
-                          Built the first CURT Formula Student car (highest rank in Egypt and Africa
+                        Built the first CURT Formula Student car (highest rank in Egypt and Africa)
                       </li>
 
                   </ul>

@@ -3,13 +3,16 @@ import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 import Circle from "@components/Circle";
 import image from  "./../public/images/contact2.webp";
-
+import LoopIcon from '@mui/icons-material/Loop';
 import {useState} from "react";
 import sendContactFormData from "@lib/email/sendContactFormData";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
+
+  const [isEmailSend, setIsEmailSent] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
 
   const [formData, setFormData] = useState({
@@ -20,8 +23,12 @@ const Contact = ({ data }) => {
   });
 
   const handleSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
-    sendContactFormData(formData)
+    sendContactFormData(formData).then(res => {
+      setIsEmailSent(true);
+      setIsLoading(false);
+    })
   }
 
   const handleChange = (e) => {
@@ -143,10 +150,19 @@ const Contact = ({ data }) => {
                   onChange={handleChange}
                 />
               </div>
-              <button type="submit" className="btn btn-primary block w-full">
-                Send Now
+
+              <button type="submit" disabled={isLoading} className="btn btn-primary block w-full">
+                {
+                  isLoading?  (<LoopIcon className={"animate-spin"}/>):("Send Now")
+                }
               </button>
             </form>
+            {
+              isEmailSend &&
+              <div className={"text-red-600 text-center"}>
+                Email Send
+              </div>
+            }
           </div>
         </div>
       </div>

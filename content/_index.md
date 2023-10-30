@@ -52,16 +52,16 @@ who_are_we:
   list:
     - icon: 'battery-charging' # feather icon: https://feathericons.com/
       title: Fully Electric
-      content: Our vehicle is a fully electric vehicle. By utilizing the technology of lithium ion batteries. we're fully powered on the track. making us more efficient and faster.
+      content: Our fully electric vehicle, powered by lithium-ion batteries, races across the track with exhilarating speed and efficiency.
     - icon: 'user'
       title: Student-Made
-      content: We have more than 20 sub-teams that work continuously every year on the vehicle and in the team's management to achieve the best results.
+      content: Our 20+ sub-teams are dedicated to continuously improving the vehicle and team management, resulting in the best possible results.
     - icon: 'dollar-sign'
       title: Non-Profit
-      content: Our racing team is an NPO. all revenue we generate IS reinvested into our vehicles. allowing us to continually innovate, and participation in more competitions.
-    - icon: 'shopping-cart'
+      content: All revenue we generate is reinvested into our vehicles, allowing us to continually innovate and participate in more competitions.
+    - icon: 'navigation-2'
       title: Driverless
-      content: We are working on developing autonomous driving systems to be used in our vehicle. This will allow us to participate in the autonomous vehicle competitions.
+      content: We are developing autonomous driving systems for our vehicle so we can participate in autonomous vehicle competitions.
 
 
 #team features
@@ -69,12 +69,12 @@ team_features:
   feature_one:
     title: The Pioneers of Electric Racing Cars in Egypt.
     subtitle: ELECTRIC VEHICLES
-    description: We are the first team in Egypt to design and manufacture an electric racing car. We have participated in many international competitions and won many awards.
+    description: We are the first Egyptian team to design and build an electric racing car. We have competed in many international competitions and won numerous awards.
     image: /images/home/flag.webp
   feature_two:
     title: Revolutionizing the future with driver-less electric racing vehicles.
     subtitle: AUTONOMOUS DRIVING
-    description: We are working on developing autonomous driving systems every year to be used in our vehicle. This allows us to participate in the autonomous vehicle competitions.
+    description: We are developing autonomous driving systems for our vehicle every year, allowing us to participate in autonomous vehicle competitions.
     image: /images/home/car.webp
 
 ---
