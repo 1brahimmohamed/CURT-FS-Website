@@ -13,17 +13,6 @@
       "url": "/formula-student"
     },
     {
-      "name": "Team",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Team 2023",
-          "url": "/team-2023"
-        }
-      ]
-    },
-    {
       "name": "Contact Us",
       "url": "/contact"
     }
@@ -32,10 +21,6 @@
     {
       "name": "About",
       "url": "/about"
-    },
-    {
-      "name": "Team",
-      "url": "/team"
     },
     {
       "name": "Contact Us",
