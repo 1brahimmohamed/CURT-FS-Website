@@ -1,6 +1,8 @@
+import { useState } from "react";
 import {markdownify} from "@lib/utils/textConverter";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
+import CollapseDiv from "./components/CollapseDiv";
 
 const Team2023 = ({data}) => {
   const {frontmatter} = data;
@@ -9,12 +11,18 @@ const Team2023 = ({data}) => {
     our_members,
   } = frontmatter;
 
+  const [isCollapsed, setIsCollapsed] = useState(false); 
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <>
       <section className="section pt-0">
         <Banner title={title}/>
 
-        {/* Members */}
+        {/* Directors */}
         <div className="section container">
           <div className="animate text-center">
             <p>{our_members.subtitle}</p>
@@ -72,23 +80,21 @@ const Team2023 = ({data}) => {
                 {our_members.directories.map((directory, dir_index) => (
 
                   <div key={dir_index}>
-                    <h5
-                      className={"row mt-6 mb-6 justify-center section-title"}>
-                      {directory.name}
-                    </h5>
 
-                    {/* Teams Mapping */}
-                    <div>
+                    <CollapseDiv
+                      buttonName={directory.name}
+                      headingTagVaraint={"h4"}
+                    >
                       {directory.teams.map((team, index) => (
                         <div
                           key={("member-", index)}
                           className="animate mb-11"
                         >
-
-                          <h6 className="animate section-title flex justify-center m-10">
-                            {team.name}
-                          </h6>
-
+                          <CollapseDiv
+                            buttonName={team.name}
+                            headingTagVaraint={"h6"}
+                          >
+                            
                           <div className="row flex justify-center m-20">
                             {team.members.map((member, index) => (
                               <div
@@ -106,11 +112,13 @@ const Team2023 = ({data}) => {
                                 <p className="mt-3">{member.position}</p>
                               </div>
                             ))}
+
                           </div>
 
+                          </CollapseDiv>
                         </div>
                       ))}
-                    </div>
+                    </CollapseDiv>
 
                   </div>
 

@@ -1,0 +1,11 @@
+.collapse-content {
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+    height: auto; /* Initial height or specify a default height */
+  }
+  
+  .collapse-content.collapsed {
+    height: 0;
+    overflow: hidden;
+  }
+  

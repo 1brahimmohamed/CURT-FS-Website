@@ -4,6 +4,15 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+        port: ''
+      }
+    ]
+  }
 };
 
 module.exports = nextConfig;
